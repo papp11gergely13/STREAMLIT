@@ -1,4 +1,4 @@
 import streamlit as st
 st.write("2 hatványa")
 
-level = st.slider(".slider: Select the level", 1, 5)
+level = st.slider(".slider: Select the level", 0, 16)
