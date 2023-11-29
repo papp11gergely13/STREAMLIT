@@ -1,5 +1,5 @@
 import streamlit as st
-st.write("2 hatványa")
+st.write("Hatványozás 2-vel")
 
 level = st.slider("2 hatványa", 0, 16)
 st.text('Selected: {}'.format(2**level))
