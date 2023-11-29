@@ -1,2 +1,4 @@
 import streamlit as st
-st.write(" Beast MOD")
+st.write("2 hatványa")
+
+level = st.slider(".slider: Select the level", 1, 5)
