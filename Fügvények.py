@@ -1,5 +1,5 @@
 import streamlit as st
-import matplotlib.pyplot as px
+ort plotly.express as px
 from streamlit_plotly_events import plotly_events
 
 # Writes a component similar to st.write()
