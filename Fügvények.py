@@ -1,5 +1,5 @@
 import streamlit as st
-from st_aggrid import AgGrid, GridOptionsBuilder
+import st_aggrid as sta
 
 AgGrid(
     df.head(50),
