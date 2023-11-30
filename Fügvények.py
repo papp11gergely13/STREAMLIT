@@ -1,16 +1,7 @@
 import streamlit as st
-import plotly.express as px
-from streamlit_plotly_events import plotly_events
+import pandas as pd
+import numpy as np
 
-# Writes a component similar to st.write()
-fig = px.line(x=[1], y=[1])
-selected_points = plotly_events(fig)
+df = pd.DataFrame(np.random.randn(10, 5), columns=("col %d" % i for i in range(5)))
 
-# Can write inside of things using with!
-with st.expander('Plot'):
-    fig = px.line(x=[1], y=[1])
-    selected_points = plotly_events(fig)
-
-# Select other Plotly events by specifying kwargs
-fig = px.line(x=[1], y=[1])
-selected_points = plotly_events(fig, click_event=True, hover_event=True)
+st.table(df)
