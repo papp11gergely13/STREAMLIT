@@ -1,12 +1,12 @@
 import pandas as pd
 import streamlit as st
 
-# Cache the dataframe so it's only loaded once
+
 @st.cache_data
 def load_data():
     return pd.DataFrame(
         {
-            "first column": [1, 2, 3, 4],
+            "first column": [1, 2, 3, 4,5,6,7,8,9,10,11,12,13,14,15 ],
             "second column": [10, 20, 30, 40],
         }
     )
