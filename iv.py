@@ -8,4 +8,5 @@ csuszka = st.slider("Életkorod ", 0, 100)
 status = st.radio(".radio: Select Gender: ", ('Male', 'Female'))
 
 list = [name,email,csuszka,status]
-st.write(list)
+if(st.button("submit")):
+	st.text(list)
