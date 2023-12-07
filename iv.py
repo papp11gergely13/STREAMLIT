@@ -6,3 +6,6 @@ name = st.text_input("Enter Your name", "Type Here ...")
 email = st.text_input("Enter Your email", "Type Here ...")
 csuszka = st.slider("Életkorod ", 0, 100)
 status = st.radio(".radio: Select Gender: ", ('Male', 'Female'))
+
+list = [name,email,csuszka,status]
+st.write(list)
